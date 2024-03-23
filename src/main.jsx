@@ -17,7 +17,7 @@ const theme = createTheme({
 ReactDOM.createRoot(document.getElementById('root'))
     .render( 
         <ThemeProvider theme={theme}>
-            <BrowserRouter>
+            <BrowserRouter basename="/The-HJG/">
                 <App /> 
             </BrowserRouter>
         </ThemeProvider>
