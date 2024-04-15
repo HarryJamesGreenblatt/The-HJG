@@ -1,10 +1,16 @@
 import { Box } from "@mui/system";
 import RubiksCube from "../../sketches/RubiksCube";
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import myHead from '../../../public/myhead.png';
-
+import { useTheme } from "@emotion/react";
 
 export default function Intro ({expanded}){
+
+    // Use the useTheme and useMediaQuery hooks from Material-UI to check if the screen size is small
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('xs'));
+
+
     return(
         <>
             {/* Box component containing the Rubik's Cube, the tagline and the head image */}
@@ -36,7 +42,7 @@ export default function Intro ({expanded}){
                         display: {xs: ( expanded ? 'none'  : 'block' ) , sm: 'block'}
                     }}
                 >
-                   {!expanded ?  <RubiksCube />  : null}
+                   {!expanded || !isMobile ?  <RubiksCube />  : null}
                 </Box>
 
                 {/* Box component for the head image */}

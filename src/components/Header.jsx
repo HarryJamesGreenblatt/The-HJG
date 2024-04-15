@@ -1,13 +1,13 @@
 // Import necessary hooks, components, and utilities
 import { useState } from "react";
+import { useTheme } from "@emotion/react";
 import { AppBar, Tabs, Tab, Box, Divider, useMediaQuery, IconButton, Drawer, List, ListItem } from "@mui/material";
-import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink, useLocation } from "react-router-dom";
 import { nanoid } from "nanoid";
-import useResponsiveText from "../hooks/useResponsiveText";
 import { sections } from "../utils";
-import { useTheme } from "@emotion/react";
 import { Close } from "@mui/icons-material";
+import useResponsiveText from "../hooks/useResponsiveText";
+import MenuIcon from '@mui/icons-material/Menu';
 
 // Define the Header component
 export default function Header() {
