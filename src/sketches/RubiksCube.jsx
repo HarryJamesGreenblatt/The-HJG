@@ -10,7 +10,7 @@ export default function RubiksCube() {
     let rubiksCube  =  null,
         dim         =  3,
         angle       =  0,
-        cubieSize   =  30;
+        cubieSize   =  40;
 
     // Define variables to keep track dynamic mouse inputs, and to account for their rotations
     let lastMouseX  =  null, 
