@@ -42,7 +42,7 @@ export default function Intro ({expanded}){
                         display: {xs: ( expanded ? 'none'  : 'block' ) , sm: 'block'}
                     }}
                 >
-                   {!expanded || !isMobile ?  <RubiksCube />  : null}
+                   {!expanded && !isMobile ?  <RubiksCube />  : null}
                 </Box>
 
                 {/* Box component for the head image */}
