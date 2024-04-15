@@ -36,7 +36,7 @@ export default function Intro ({expanded}){
                         display: {xs: ( expanded ? 'none'  : 'block' ) , sm: 'block'}
                     }}
                 >
-                    <RubiksCube />
+                   {!expanded ?  <RubiksCube />  : null}
                 </Box>
 
                 {/* Box component for the head image */}
