@@ -38,8 +38,7 @@ export default function Intro ({expanded}){
                         position: 'relative',
                         top: {xs:'10em', sm: '3em'},
                         zIndex: 9,
-                        transition: '1s ease-in-out',
-                        display: {xs: ( expanded ? 'none'  : 'block' ) , sm: 'block'}
+                        transition: '1s ease-in-out'
                     }}
                 >
                    {!expanded && !isMobile ?  <RubiksCube />  : null}
