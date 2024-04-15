@@ -66,7 +66,8 @@ export default function FoldedSections({expanded}){
                             display : 'flex',
                             flexDirection: {xs: 'column', md: 'row'},
                             width: '100%',
-                            overflow: 'hidden'
+                            overflow: 'hidden',
+                            padding: 0
                             // height: '100%'
                         }}
                     >

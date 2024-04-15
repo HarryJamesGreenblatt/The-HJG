@@ -25,68 +25,17 @@ export class Cubie {
 
     // This method rotates the colors of the cube's faces around the x-axis
     rotateX(p5, dir) {
-        // // Store the current top color in a temporary variable
-        // let tmp = this.colors.top;
-        // // If the direction is -1, rotate the colors counter-clockwise
-        // // Else, rotate the colors clockwise
-        // if (dir === -1) {
-        //     this.colors.top = this.colors.back;
-        //     this.colors.back = this.colors.bottom;
-        //     this.colors.bottom = this.colors.front;
-        //     this.colors.front = tmp;
-        // } else {
-        //     this.colors.top = this.colors.front;
-        //     this.colors.front = this.colors.bottom;
-        //     this.colors.bottom = this.colors.back;
-        //     this.colors.back = tmp;
-        // }
-
         this.targetOrientation.x += dir * p5.HALF_PI;
-
-
     }
 
     // This method rotates the colors of the cube's faces around the y-axis
     rotateY(p5, dir) {
-        // // Store the current front color in a temporary variable
-        // let tmp = this.colors.front;
-        // // If the direction is -1, rotate the colors counter-clockwise
-        // // Else, rotate the colors clockwise
-        // if (dir === -1) {
-        //     this.colors.front = this.colors.right;
-        //     this.colors.right = this.colors.back;
-        //     this.colors.back = this.colors.left;
-        //     this.colors.left = tmp;
-        // } else {
-        //     this.colors.front = this.colors.left;
-        //     this.colors.left = this.colors.back;
-        //     this.colors.back = this.colors.right;
-        //     this.colors.right = tmp;
-        // }
-
         this.targetOrientation.y += dir * p5.HALF_PI;
-
     }
 
     // This method rotates the colors of the cube's faces around the z-axis
     rotateZ(p5, dir) {
-        // // Store the current top color in a temporary variable
-        // let tmp = this.colors.top;
-        // // If the direction is -1, rotate the colors counter-clockwise
-        // // Else, rotate the colors clockwise
-        // if (dir === -1) {
-        //     this.colors.top = this.colors.right;
-        //     this.colors.right = this.colors.bottom;
-        //     this.colors.bottom = this.colors.left;
-        //     this.colors.left = tmp;
-        // } else {
-        //     this.colors.top = this.colors.left;
-        //     this.colors.left = this.colors.bottom;
-        //     this.colors.bottom = this.colors.right;
-        //     this.colors.right = tmp;
-        // }
         this.targetOrientation.z += dir * p5.HALF_PI;
-
     }
 
     // This method draws the cube

@@ -32,7 +32,8 @@ export default function Intro ({expanded}){
                         position: 'relative',
                         top: {xs:'10em', sm: '3em'},
                         zIndex: 9,
-                        transition: '1s ease-in-out'
+                        transition: '1s ease-in-out',
+                        display: {xs: ( expanded ? 'none'  : 'block' ) , sm: 'block'}
                     }}
                 >
                     <RubiksCube />
