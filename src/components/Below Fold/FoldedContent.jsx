@@ -28,7 +28,7 @@ export default function FoldedContent({commaDelimitedHeading, children}){
                 <Typography
                     sx={{ 
                         fontFamily: 'Miltonian', 
-                        fontSize: {xs:'1.4em', sm:'1.75rem'}, 
+                        fontSize: {xs:'1.25em', sm:'1.75rem'}, 
                         marginRight: '1rem',
                         textTransform: 'lowercase' ,
                     }}
@@ -39,7 +39,7 @@ export default function FoldedContent({commaDelimitedHeading, children}){
                     sx={{ 
                         textTransform: 'lowercase',
                         fontFamily: 'Leckerli One',
-                        marginRight: '1.25rem',
+                        marginRight: '1.05rem',
                         fontSize: {xs:'1.65em', sm:'2rem'}, 
                     }}
                 >
@@ -48,7 +48,7 @@ export default function FoldedContent({commaDelimitedHeading, children}){
                 <Typography 
                     sx={{ 
                         fontFamily: 'Miltonian', 
-                        fontSize: {xs:'1.4em', sm:'1.75rem'}, 
+                        fontSize: {xs:'1.25em', sm:'1.75rem'}, 
                         textTransform: 'lowercase' ,
                     }}
                 >

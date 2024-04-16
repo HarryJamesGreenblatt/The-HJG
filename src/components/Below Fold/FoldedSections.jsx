@@ -110,7 +110,7 @@ export default function FoldedSections({expanded}){
                 );
                 break;
             case 2:
-                commaDelimitedHeading = "a,good reputation,with customers";
+                commaDelimitedHeading = "a,good reputation,with clients";
                 break;
             default:
                 commaDelimitedHeading = "a,game plan,worth following"

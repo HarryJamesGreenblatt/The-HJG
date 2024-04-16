@@ -37,7 +37,7 @@ export default function TypingEffect({ text = '', speed = 100, delay = 0 }){
             variant="body1"
             sx={{
               fontFamily: 'Annie Use Your Telescope',
-              fontSize: {xs:'1.5rem', sm: '1.75rem', md: '2rem'},
+              fontSize: {xs:'1.25rem', sm: '1.75rem', md: '2rem'},
               color: '#ffffffcc',
               textAlign: 'justify'
             }}
