@@ -12,11 +12,11 @@ import { generateDummyArticles } from "./utils";
 function App() {
 
   // Execute a custom hook that fetches the data and stores it as state.
-  // const jsonData = useJsonData();
+  const jsonData = useJsonData();
 
   
   // Generating test data to avoid making too many API calls
-  const jsonData = generateDummyArticles( 50 );
+  // const jsonData = generateDummyArticles( 50 );
   
 
   // Rendering the Routes if jsonData is not null

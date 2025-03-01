@@ -38,6 +38,30 @@ export class Cubie {
         this.targetOrientation.z += dir * p5.HALF_PI;
     }
 
+    rotateLayerX(p5, dir) {
+        const newY = this.pos.z * dir;
+        const newZ = -this.pos.y * dir;
+        this.pos.y = newY;
+        this.pos.z = newZ;
+        this.rotateX(p5, dir);
+    }
+
+    rotateLayerY(p5, dir) {
+        const newX = -this.pos.z * dir;
+        const newZ = this.pos.x * dir;
+        this.pos.x = newX;
+        this.pos.z = newZ;
+        this.rotateY(p5, dir);
+    }
+
+    rotateLayerZ(p5, dir) {
+        const newX = -this.pos.y * dir;
+        const newY = this.pos.x * dir;
+        this.pos.x = newX;
+        this.pos.y = newY;
+        this.rotateZ(p5, dir);
+    }
+
     // This method draws the cube
     show(p5) {
 

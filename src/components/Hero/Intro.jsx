@@ -41,7 +41,7 @@ export default function Intro ({expanded}){
                         transition: '1s ease-in-out'
                     }}
                 >
-                   {!expanded && !isMobile ?  <RubiksCube />  : null}
+                   {!isMobile ? <RubiksCube /> : null}
                 </Box>
 
                 {/* Box component for the head image */}
