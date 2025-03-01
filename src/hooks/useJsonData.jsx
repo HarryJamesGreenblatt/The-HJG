@@ -10,10 +10,10 @@ export default function useJsonData(){
     useEffect(() => {
             // Options for the fetch request
             const options = {
-            method: 'GET',
-            headers: {
-                'x-api-key': import.meta.env.VITE_NEWS_API_KEY
-            }
+                method: 'GET',
+                headers: {
+                    'x-api-key': import.meta.env.VITE_NEWS_API_KEY
+                }
             };
 
 
