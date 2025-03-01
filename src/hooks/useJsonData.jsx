@@ -59,7 +59,7 @@ export default function useJsonData(){
 
                 // Throwing an error if the response is not ok
                 if (!response.ok) {
-                throw new Error('Network response was not ok');
+                    throw new Error('Network response was not ok');
                 }
 
                 // Parsing the response data as JSON

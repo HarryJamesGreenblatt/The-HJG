@@ -6,17 +6,17 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import useJsonData from "./hooks/useJsonData";
-import { generateDummyArticles } from "./utils";
+// import { generateDummyArticles } from "./utils";
 
 // Defining the App component
 function App() {
 
   // Execute a custom hook that fetches the data and stores it as state.
-  // const jsonData = useJsonData();
+  const jsonData = useJsonData();
 
   
   // Generating test data to avoid making too many API calls
-  const jsonData = generateDummyArticles( 50 );
+  // const jsonData = generateDummyArticles( 50 );
   
 
   // Rendering the Routes if jsonData is not null
